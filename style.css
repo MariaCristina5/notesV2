@@ -11,7 +11,7 @@ body {
     background-color: #fff;
     font-family: "Poppins", sans-serif;
 }
-.main-container{
+.main-controler{
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -62,7 +62,7 @@ body {
 }
 
 .note-container {
-    width: 550px;
+    width: 600px;
     height: 150px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 8px;
@@ -70,12 +70,7 @@ body {
 }
 
 .note-header {
-    margin: 0 10px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    
-    
+    margin: 0 5px;
 }
 
 .note-title{
@@ -130,7 +125,7 @@ body {
     height: 150px;
     border-radius: 8px;
     border: 1px solid rgb(194, 194, 194);
-    margin: 0 25px;
+    margin: 25px 25px;
     transition: box-shadow .3s;
 }
 
@@ -142,15 +137,15 @@ body {
 
 }
 
-.more-tools{
+.more-tools-small{
     margin-top: 5px;
     margin-left: 10px;
-    display: none;
+    display: block;
 }
-div:hover + .more-tools, .more-tools:hover{
+/* div:hover + .more-tools-small, .more-tools-small:hover{
     display: inline-block;
     
-}
+} */
 
 .note-box-container:hover {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
@@ -169,3 +164,24 @@ div:hover + .more-tools, .more-tools:hover{
 .btn-small {
     margin: 6px 0;
 }
+
+
+
+/*  de lucrat la drop-down menu
+.fa-angles-down{
+    position: relative;
+}
+.drop-down {
+    position: absolute;
+    margin-right: 3rem;
+} */
+/* .show {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.2);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: inline-block;
+} */
