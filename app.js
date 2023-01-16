@@ -23,7 +23,8 @@ function showFunction(){
         y.style.display = "block"
     }
 }
-closeBtn.addEventListener('click', () =>{
-    noteCointainerEl.remove()
 
+closeBtn.addEventListener('click', ()=>{
+    hideFunction();
+    showFunction();
 })
