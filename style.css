@@ -10,12 +10,20 @@ body {
     height: 100vh;
     background-color: #fff;
     font-family: "Poppins", sans-serif;
+
 }
 .main-controler{
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+   
+}
 
+.main-controler-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .tools {
@@ -89,7 +97,7 @@ body {
     outline: none;
     border: none;
     resize: none;
-    width: 400px;
+    width: 570px;
 }
 
 .close-btn {
@@ -102,6 +110,7 @@ body {
     font-size: 0.9rem;
     letter-spacing: 1px;
     color: grey;
+    
 }
 
 .close-btn:hover {
@@ -125,8 +134,13 @@ body {
     height: 150px;
     border-radius: 8px;
     border: 1px solid rgb(194, 194, 194);
-    margin: 25px 25px;
+    margin: 25px 15px;
     transition: box-shadow .3s;
+    position: relative;
+}
+
+.note-box-container:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 .pin-btn-small {
@@ -136,20 +150,21 @@ body {
     
 
 }
+.more-tools {
+    margin-bottom: 5px;
+}
 
 .more-tools-small{
-    margin-top: 5px;
+    margin-top: 30px;
     margin-left: 10px;
-    display: block;
+   
+    /* display: block; */
 }
 /* div:hover + .more-tools-small, .more-tools-small:hover{
     display: inline-block;
     
 } */
 
-.note-box-container:hover {
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-}
 
 .span {
     margin-left: 10px;
@@ -165,23 +180,54 @@ body {
     margin: 6px 0;
 }
 
-
-
-/*  de lucrat la drop-down menu
-.fa-angles-down{
-    position: relative;
+.main-note-controler{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
-.drop-down {
-    position: absolute;
-    margin-right: 3rem;
-} */
-/* .show {
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: rgba(0,0,0,0.2);
-    width: 100%;
-    height: 100%;
-    z-index: 1;
+
+
+/*  de lucrat la drop-down menu*/
+.dropdown {
+    position: relative;
     display: inline-block;
-} */
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    text-align: center;
+    background-color: #f1f1f1;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 3;
+    left: 210px;
+    top: 285px;
+    
+}
+
+.dropdown-content a {
+    text-decoration: none;
+    color: grey;
+}
+
+.dropdown a:hover {
+    color:rgb(37, 37, 37);
+    background-color:rgba(214, 214, 214, 0.671);
+}
+
+#note-close-btn {
+    position: absolute;
+    top: -22px;
+    right: -13px;
+    
+   
+   
+}
+
+.hidden{
+    display: none;
+}
