@@ -71,7 +71,7 @@ body {
 
 .note-container {
     width: 600px;
-    height: 150px;
+    height: 180px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 8px;
     display: none; /*facem hide la asta ca sa apara primul*/
