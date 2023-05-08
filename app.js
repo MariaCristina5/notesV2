@@ -47,7 +47,13 @@ function showFunction() {
     y.style.display = "block";
   }
 }
-// credinta la romani dan puric
+
+document.addEventListener('keydown', (e) => {
+  if(e.key === 'Escape'){
+      hideFunction();
+      showFunction();
+  }
+});
 
 //function for note container
 function addNewNote() {
